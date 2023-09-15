@@ -10,13 +10,20 @@ import java.util.Date;
  *
  * @author Rodrigo
  */
-public class Expediente extends Documento {
+public class Expediente {
+    private int nro;
     private String letra;
+    private int anio;
     private String anexo;
+    private Documento documento;
 
-    public Expediente(int id, Date fechacreacion, String letra, int anio, String anexo) {
-        super(id, fechacreacion);
+    public Expediente(int nro, String letra, int anio, String anexo, Documento documento) {
+        this.nro = nro;
         this.letra = letra;
+        this.anio = anio;
         this.anexo = anexo;
+        this.documento = documento;
     }
+
+    // Getters y setters
 }

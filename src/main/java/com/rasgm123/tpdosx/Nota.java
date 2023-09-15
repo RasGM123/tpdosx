@@ -10,15 +10,18 @@ import java.util.Date;
  *
  * @author Rodrigo
  */
-public class Nota extends Documento {
+public class Nota {
     private int nro;
     private int anio;
     private String asunto;
+    private Documento documento;
 
-    public Nota(int id, Date fechacreacion, int nro, int anio, String asunto) {
-        super(id, fechacreacion);
+    public Nota(int nro, int anio, String asunto, Documento documento) {
         this.nro = nro;
         this.anio = anio;
         this.asunto = asunto;
+        this.documento = documento;
     }
+
+    // Getters y setters
 }

@@ -13,14 +13,14 @@ import java.util.Date;
 public class Movimiento {
     private int id;
     private Date fechamov;
-    private Area origen;
-    private Area destino;
+    private Documento documento;
 
-    public Movimiento(int id, Date fechamov, Area des, Area ori) {
+    public Movimiento(int id, Date fechamov, Documento documento) {
         this.id = id;
         this.fechamov = fechamov;
-        this.destino = new Area();
-        this.origen = new Area();
+        this.documento = documento;
     }
+
+    // Getters y setters
 }
 

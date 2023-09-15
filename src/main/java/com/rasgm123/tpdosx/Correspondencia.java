@@ -3,20 +3,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.rasgm123.tpdosx;
-
-import java.util.Date;
-
 /**
  *
  * @author Rodrigo
  */
-public class Correspondencia extends Documento {
+public class Correspondencia {
     private String remitente;
     private String direccion;
+    private Documento documento;
 
-    public Correspondencia(int id, Date fechacreacion, String remitente, String direccion) {
-        super(id, fechacreacion);
+    public Correspondencia(String remitente, String direccion, Documento documento) {
         this.remitente = remitente;
         this.direccion = direccion;
+        this.documento = documento;
     }
+
+    // Getters y setters
 }

@@ -19,7 +19,12 @@ public class Area {
         this.telefono = telefono;
     }
 
-    Area() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    // Getters y setters
+
+    public int getId() {
+    return this.id;
+    }
+    public String getNomarea(){
+    return this.nomarea;
     }
 }
